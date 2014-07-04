@@ -23,6 +23,8 @@ Then type or paste
 `chmod ugo+rx /usr/bin/datauri.php`
 and hit enter. This makes the file executable as a Terminal command.
 
+If you are not familiar with using the Terminal, open **[download datauri if needed.scpt](https://github.com/A-G-F/ML-Scripts/blob/master/Services/download%20datauri%20if%20needed.scpt)** and click on "execute". The script then checks if datauri.php is installed and installs it as executable if not present. A Terminal window will open, where you have to enter your system administrator password and hit "enter" to continue.
+
 
 ###Use datauri.php in Terminal
 
