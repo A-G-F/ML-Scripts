@@ -32,3 +32,7 @@ datauri.php can convert more than just images. For a whole list of possible file
 `datauri.php some-image.png > some-image.png.txt`
 
 Drag & drop is supported, so you can drop an image instead of typing the full path to `some-image.png`. Note that you have to **put it twice in this command** and add a new suffix `.txt`!
+
+<hr>
+
+To install the service, just double click it.

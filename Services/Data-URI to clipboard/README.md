@@ -33,3 +33,7 @@ datauri.php can convert more than just images. For a whole list of possible file
 
 
 Drag & drop is supported, so you can drop an image instead of typing the full path to `some-image.png`.
+
+<hr>
+
+To install the service, just double click it.
