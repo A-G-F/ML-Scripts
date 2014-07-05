@@ -7,7 +7,7 @@ When you have Developer Tools installed, use **Data-URI to clipboard**, otherwis
 To install a service, just double click it.
 
 
-###Download and install datauri.php with Terminal
+####Download and install datauri.php with Terminal
 
 Use [our Gist](https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php) to download and install easily:
 In Terminal type
@@ -23,10 +23,13 @@ Then type or paste
 `chmod ugo+rx /usr/bin/datauri.php`
 and hit enter. This makes the file executable as a Terminal command.
 
+
+####Download and install datauri.php with Applescript
+
 If you are not familiar with using the Terminal, open **[download datauri if needed.scpt](https://github.com/A-G-F/ML-Scripts/blob/master/Services/download%20datauri%20if%20needed.scpt)** and click on "execute". The script then checks if datauri.php is installed and installs it as executable if not present. A Terminal window will open, where you have to enter your system administrator password and hit "enter" to continue.
 
 
-###Use datauri.php in Terminal
+###How to use datauri.php in Terminal
 
 datauri.php can convert more than just images. For a whole list of possible file types that become additionally available if you use it in the command line, [look at the long array in the file beginning in line 54](https://gist.github.com/A-G-F/972441b645ff5e57cd05).
 

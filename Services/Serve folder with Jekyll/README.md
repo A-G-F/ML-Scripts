@@ -6,6 +6,9 @@ Jekyll will be started in a free Terminal session (it does recognize if active w
 
 Jekyll will serve the folder with address http//0.0.0.0:4000 and watch for changes. A browser window will open that location with a 10 seconds delay.
 
+####Requirements:
+* [Jekyll](http://jekyllrb.com)
+
 <hr>
 
 To install the service, just double click it.
