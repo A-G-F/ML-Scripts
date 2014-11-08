@@ -1,35 +1,18 @@
 #Data-URI to clipboard
 
-This service makes the power of Rodney Rehms [datauri.php](https://gist.github.com/rodneyrehm/1372758/) available as a System service in Finder and other native (not Java!) applications with integrated file browser.
+This service makes the power of [Rodney Rehms datauri.php](https://gist.github.com/rodneyrehm/1372758/) available as a System service in Finder and other native applications with integrated file browser.
 
 ####Requirements:
 * datauri.php
 * Admin privileges
-* Apple Developer Tools
+* [Xcode](https://developer.apple.com/xcode/)
 
-If you don't have Developer Tools installed, use **Data-URI to file** instead!
-
-
-###Download and install datauri.php with Terminal
-
-Use [our Gist](https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php) to download and install easily:
-In Terminal type
-`cd /usr/bin`
-and hit enter.
-
-Then type or paste
-`sudo curl -L -o 'datauri.php' 'https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php'`
-and hit enter. You will be asked for your administrator password to grant permission for downloading to that directory. 
-Type it (will not be visible) and hit enter.
-
-Then type or paste
-`chmod ugo+rx /usr/bin/datauri.php`
-and hit enter. This makes the file executable as a Terminal command.
+If you don't have Xcode installed, use [**Data-URI to file**](../Data-URI%20to%20file) instead!
 
 
-###Download and install datauri.php with Applescript
+###Downloads and installs datauri.php on first run
 
-If you are not familiar with using the Terminal, open **[download datauri if needed.scpt](https://github.com/A-G-F/ML-Scripts/blob/master/Services/download%20datauri%20if%20needed.scpt)** and click on "execute". The script then checks if datauri.php is installed and installs it as executable if not present. A Terminal window will open, where you have to enter your system administrator password and hit "enter" to continue.
+No need for manual download and installation anymore: For those not familiar with using the Terminal, the workflow itself checks if [datauri.php](https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php) is installed and puts it as an executable into [/usr/bin](file:///usr/bin) if not present. A Terminal window will open, where you have to enter your system administrator password and hit "enter" to continue.
 
 
 ##How to use datauri.php in Terminal
@@ -44,4 +27,4 @@ Drag & drop is supported, so you can drop an image instead of typing the full pa
 
 <hr>
 
-To install the service, just double click it.
+**To install the service, just double click it.**

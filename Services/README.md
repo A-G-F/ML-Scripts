@@ -1,32 +1,13 @@
-##Data-URI to clipboard or file
+#Data-URI to clipboard or file
 
-These services make the power of Rodney Rehms [datauri.php](https://gist.github.com/rodneyrehm/1372758/) available as a System service in Finder and other native (not Java!) applications with integrated file browser.
+These services make the power of [Rodney Rehms datauri.php](https://gist.github.com/rodneyrehm/1372758/) available as a System service in Finder and other native applications with integrated file browser.
 
-When you have Developer Tools installed, use **Data-URI to clipboard**, otherwise create a textfile next to the selected image with **Data-URI to file**.
-
-To install a service, just double click it.
+When you have [Xcode](https://developer.apple.com/xcode/) installed, use **Data-URI to clipboard**, otherwise create a textfile next to the selected image with **Data-URI to file**.
 
 
-####Download and install datauri.php with Terminal
+###Downloads and installs datauri.php on first run
 
-Use [our Gist](https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php) to download and install easily:
-In Terminal type
-`cd /usr/bin`
-and hit enter.
-
-Then type or paste
-`sudo curl -L -o 'datauri.php' 'https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php'`
-and hit enter. You will be asked for your administrator password to grant permission for downloading to that directory. 
-Type it (will not be visible) and hit enter.
-
-Then type or paste
-`chmod ugo+rx /usr/bin/datauri.php`
-and hit enter. This makes the file executable as a Terminal command.
-
-
-####Download and install datauri.php with Applescript
-
-If you are not familiar with using the Terminal, open **[download datauri if needed.scpt](https://github.com/A-G-F/ML-Scripts/blob/master/Services/download%20datauri%20if%20needed.scpt)** and click on "execute". The script then checks if datauri.php is installed and installs it as executable if not present. A Terminal window will open, where you have to enter your system administrator password and hit "enter" to continue.
+No need for the manual install procedure anymore: For those not familiar with using the Terminal, the workflow checks if [datauri.php](https://gist.github.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php) is installed and puts it as executable into [/usr/bin](file:///usr/bin) if not present. A Terminal window will open, where you have to enter your system administrator password and hit "enter" to continue.
 
 
 ###How to use datauri.php in Terminal
@@ -36,7 +17,7 @@ datauri.php can convert more than just images. For a whole list of possible file
 **Save the data uri to a file:** 
 `datauri.php some-image.png > some-image.png.txt`
 
-**Copy the data uri to clipboard (Mac OS X, Developer Tools installed):** 
+**Copy the data uri to clipboard (Mac OS X, Xcode installed):** 
 `datauri.php some-image.png | pbcopy`
 
 
@@ -44,14 +25,14 @@ Drag & drop is supported, so you can drop an image instead of typing the full pa
 
 <hr>
 
-##Serve folder with Jekyll
-**Jekyll Serve Folder** is a System service in Finder and other native (not Java!) applications with integrated file browser.
+#Serve folder with Jekyll
+**Jekyll Serve Folder** is a System service in Finder and other native applications with integrated file browser.
 
-**Serve a folder with Jekyll with a single ctrl-click:**  
-Jekyll will be started in a free Terminal session (it does recognize if active window is busy and choose a free one or create a new one if necessary).
+###Serve a folder with Jekyll with a single ctrl-click: 
+Jekyll will be started in a free Terminal session (script does recognize if active window is busy and chooses a free one or creates a new one if necessary).
 
-Jekyll will serve the folder with address http//0.0.0.0:4000 and watch for changes. A browser window will open that location with a 10 seconds delay. 
+Jekyll will serve the folder with address http://0.0.0.0:4000 and watch for changes. A browser window will open that location after a 10 seconds delay. 
 
 <hr>
 
-To install a service, just double click it.
+**To install a service, just double click it.**

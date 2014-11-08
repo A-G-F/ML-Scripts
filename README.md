@@ -1,14 +1,15 @@
 ##OS X 10.8+ Automator Scripts for Web Developers
 They may work with earlier versions of Mac OS X, but have not been tested there.
 
-###Latest stable package: [v1.0](https://github.com/A-G-F/ML-Scripts/releases/latest)
-####Content
-* Applescript to install datauri.php (Thanks to @rodneyrehm for his Gist)
+###Latest stable package: [v1.1](https://github.com/A-G-F/ML-Scripts/releases/tag/v1.1)
+####Content:
 * **Services:**
   * Data-URI to clipboard
   * Data-URI to file
+  * Serve folder with Jekyll
 
 ####Requirements:
-* datauri.php
-* Admin privileges
-* Developer Tools for Data-URI to clipboard
+* Admin privileges to install datauri.php
+* [Xcode](https://developer.apple.com/xcode/) for **Data-URI to clipboard**
+* [Jekyll](http://jekyllrb.com) for **Serve folder with Jekyll**
+
