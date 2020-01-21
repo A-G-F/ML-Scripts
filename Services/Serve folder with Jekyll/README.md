@@ -1,4 +1,4 @@
-#Serve folder with Jekyll
+# Serve folder with Jekyll
 **Jekyll Serve Folder** is a System service in Finder and other native applications with integrated file browser.
 
 ###Serve a folder with Jekyll with a single ctrl-click: 
@@ -6,7 +6,7 @@ Jekyll will be started in a free Terminal session (script does recognize if acti
 
 Jekyll will serve the folder with address http//0.0.0.0:4000 and watch for changes. A browser window will open that location after a 10 seconds delay.
 
-####Requirements:
+#### Requirements:
 * [Jekyll](http://jekyllrb.com)
 
 <hr>
