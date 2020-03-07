@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>444.42</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.9</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>property commandString : "cd '/usr/bin'; sudo curl -L -o 'datauri.php' 'https://gist.githubusercontent.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php'; sudo chmod ugo+rx /usr/bin/datauri.php; osascript -e 'tell app \"System Events\" to display dialog \"datauri.php has been installed and is now available as a shell command.\" buttons \"OK\" default button 1'"property thePath : "/usr/bin/datauri.php"on run {input, parameters}		try		set thePath to (POSIX file thePath) as alias			on error		tell application "Terminal" -- Get a free window to run the commandString,			activate						delay (1) -- (being sure to avoid creating a new session unnecessarily,			-- while also handling the possibility that frontmost window is busy): 			set windowCount to (count of the windows)									if windowCount is greater than 0 then				repeat with w from 1 to windowCount					if window 1 is busy then						set frontmost of window 1 to false					else						do script commandString in window 1						set frontmost of window 1 to true						return					end if				end repeat			end if						tell window 1				do script commandString				set frontmost to true			end tell					end tell		return	end try	return input	end run</string>
+					<string>property commandString : "cd '/usr/local/bin'; sudo curl -L -o 'datauri.php' 'https://gist.githubusercontent.com/A-G-F/972441b645ff5e57cd05/raw/a461e8793d1d80e4d30f6ec7d280a173a70fc152/datauri.php'; sudo chmod ugo+rx /usr/local/bin/datauri.php; osascript -e 'tell app \"System Events\" to display dialog \"datauri.php has been installed and is now available as a shell command.\" buttons \"OK\" default button 1'"property thePath : "/usr/local/bin/datauri.php"on run {input, parameters}		try		set thePath to (POSIX file thePath) as alias			on error		tell application "Terminal" -- Get a free window to run the commandString,			activate						delay (1) -- (being sure to avoid creating a new session unnecessarily,			-- while also handling the possibility that frontmost window is busy): 			set windowCount to (count of the windows)									if windowCount is greater than 0 then				repeat with w from 1 to windowCount					if window 1 is busy then						set frontmost of window 1 to false					else						do script commandString in window 1						set frontmost of window 1 to true						return					end if				end repeat			end if						tell window 1				do script commandString				set frontmost to true			end tell					end tell		return	end try	return input	end run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -105,9 +105,9 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>450.000000:722.000000</string>
+				<string>309.000000:368.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -207,9 +207,9 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>450.000000:409.000000</string>
+				<string>309.000000:613.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -217,7 +217,7 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>6F13B059-DD42-43E7-B588-C2BBE1B7F166</key>
+		<key>9B4AA262-6179-43E3-9F48-28EAB46BF1E6</key>
 		<dict>
 			<key>from</key>
 			<string>64D34782-0F77-4693-BC6A-1D2016EDD2AD - 64D34782-0F77-4693-BC6A-1D2016EDD2AD</string>
@@ -227,15 +227,27 @@ end run</string>
 	</dict>
 	<key>workflowMetaData</key>
 	<dict>
-		<key>serviceApplicationBundleID</key>
-		<string></string>
-		<key>serviceApplicationPath</key>
-		<string></string>
+		<key>applicationBundleIDsByPath</key>
+		<dict/>
+		<key>applicationPaths</key>
+		<array/>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.image</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject.image</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
 		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
